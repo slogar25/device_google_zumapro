@@ -22,4 +22,6 @@
     <bool name="config_show_connectivity_helper_call_quality">true</bool>
     <!-- The switch preference's default value of connectivity helper DeviceToDevice-->
     <bool name="config_show_connectivity_helper_d2d">true</bool>
+	<!-- Multiple vibration strength levels -->
+	<integer name="config_vibration_supported_intensity_levels">3</integer>
 </resources>

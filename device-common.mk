@@ -31,6 +31,15 @@ TARGET_VENDOR_PROP += device/google/zumapro/vendor.prop
 
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.testing_battery_profile=2
+	
+# Camera
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
+    ro.vendor.camera.extensions.service=com.google.android.apps.camera.services.extensions.service.PixelExtensions
+	
+# Linker config
+PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
+    device/google/zumapro/linker.config.json
 
 # The default value of this variable is false and should only be set to true when
 # the device allows users to retain eSIM profiles after factory reset of user data.
